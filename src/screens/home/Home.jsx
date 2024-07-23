@@ -9,7 +9,7 @@ const Home = () => {
   // UseEffect
   useEffect(() => {
 
-    axios.get('https://fakestoreapi.com/products?limit=4')
+    axios.get('https://fakestoreapi.com/products?limit')
       .then((res) => {
         setAllProducts(res.data);
 
